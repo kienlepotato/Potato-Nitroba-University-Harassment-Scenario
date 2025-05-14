@@ -1,3 +1,15 @@
+//Step. 1 UPDATE
+Sudo apt update
+If you have a problem with update and apt failing because of keys. 
+
+sudo wget https://archive.kali.org/archive-key.asc -O /etc/apt/trusted.gpg.d/kali-archive-keyring.asc
+
+If you have a missing public key replace F6BC with the key you need:
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F6BC
+
+Sudo apt update
+
 Sites
 https://www.linkedin.com/posts/aditya-more-28771b184_2008-nitroba-university-harassment-scenario-activity-7033326201909747712-Tuzb 
 
