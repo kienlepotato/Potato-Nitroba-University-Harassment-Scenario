@@ -24,3 +24,15 @@ http://simson.net/ref/2011/2011-07-20%20Working%20with%20Forensic%20Data.pdf
 Install Netminer & Wireshark
 
 https://www.netresec.com/?page=NetworkMiner 
+
+For Kali Linux:
+sudo apt install mono-devel
+sudo apt install libgtk2.0-common
+
+Install Network Miner:
+curl -o /tmp/nm.zip https://www.netresec.com/?download=NetworkMiner
+sudo unzip /tmp/nm.zip -d /opt/
+sudo chmod +x /opt/NetworkMiner_*/NetworkMiner.exe
+
+Run Netowrk Miner:
+mono /opt/NetworkMiner_*/NetworkMiner.exe --noupdatecheck
